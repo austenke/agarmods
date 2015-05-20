@@ -58,8 +58,7 @@ function agariomodsRuntimePatches() {
 	gamejs = gamejs.replace('g.Raven&&g.Raven.config("https://2a85d1d3fb114384a2758cde7de2bef7@app.getsentry.com/43938",{release:"2",whitelistUrls:["agar.io/"]}).install();', "");
 	//m
 	gamejs = gamejs.replace("wa=!1", "wa=!0");
-/*we have rolled back the mass mod because of the unfair advantage it offers, it's not cool to cheat!****/
-/*	gamejs = gamejs.replace("(c||0==g.length&&(!this.isVirus||this.isAgitated)&&20<this.size)&&", ""); */
+	gamejs = gamejs.replace("(c||0==g.length&&(!this.isVirus||this.isAgitated)&&20<this.size)&&", "");
 
 }
 function agariomodsRuntimeHacks() {
